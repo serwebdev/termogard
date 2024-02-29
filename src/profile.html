@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html',{title:'Личный кабинет'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <!-- breadcrumbs---------------------------------------------------- -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__inner">
+                <div class="breadcrumbs__list">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Главная</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <div class="breadcrumbs__item">Личный кабинет</div>
+                </div>
+                <h1 class="breadcrumbs__title">Личный кабинет</h1>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="profile-mydata">
+                <div class="container">
+                    <div class="profile-mydata__inner">
+                        <nav class="menu-profile">
+                            <ul class="menu-profile__list">
+                                <li class="menu-profile__item active">
+                                    <a href="profile.html" class="menu-profile__link">Мои данные</a>
+                                </li>
+                                <li class="menu-profile__item">
+                                    <a href="profile-order-1.html" class="menu-profile__link">Мои заказы</a>
+                                </li>
+                                <li class="menu-profile__item">
+                                    <a href="profile-promo.html" class="menu-profile__link">Мои промокоды</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="mydata">
+                            <h2 class="mydata__title profile-title h3">Мои данные</h2>
+                            <h4 class="mydata__subtitle mydata-title">Личная информация</h4>
+                            <div class="mydata__avatar">
+                                <img src="img/profile-avatar.png" alt="Аватар" class="mydata__avatar-img">
+                            </div>
+                            <form class="form-profile">
+                                <div class="form-profile__section">
+                                    <div class="form-profile__section-item">
+                                        <h6 class="form-profile__title">Имя<span>*</span></h6>
+                                        <input type="text" class="form-profile__input input" placeholder="Алина">
+                                    </div>
+                                    <div class="form-profile__section-item">
+                                        <h6 class="form-profile__title">Фамилия</h6>
+                                        <input type="text" class="form-profile__input input" placeholder="Иванова">
+                                    </div>
+                                    <div class="form-profile__section-item">
+                                        <h6 class="form-profile__title">Дата рождения</h6>
+                                        <input type="text" class="form-profile__input input" placeholder="18.08.1999">
+                                    </div>
+                                    <div class="form-profile__section-item">
+                                        <h6 class="form-profile__title">Пол</h6>
+                                        <div class="form-profile__group">
+                                            <label class="form-profile__label">
+                                                <input type="radio" name="gender" class="form-profile__radio radio">
+                                                Мужской
+                                            </label>
+                                            <label class="form-profile__label">
+                                                <input type="radio" name="gender" class="form-profile__radio radio">
+                                                Женский
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="mydata-title">Адрес</h4>
+                                <div class="form-profile__section">
+                                    <div class="form-profile__section-item">
+                                        <h6 class="form-profile__title">Город<span>*</span></h6>
+                                        <div class="form-profile__input-wrap">
+                                            <input type="text" class="form-profile__input input" value="Краснодар">
+                                            <img src="img/profile-close.svg" alt="Закрытие">
+                                        </div>
+                                    </div>
+                                    <div class="form-profile__section-item">
+                                        <h6 class="form-profile__title">Улица</h6>
+                                        <div class="form-profile__input-wrap">
+                                            <input type="text" class="form-profile__input input"
+                                                value="ул. им. Академика Лукьяненко П.П.">
+                                            <img src="img/dropdown-arrow.svg" alt="Стрелка">
+                                        </div>
+                                    </div>
+                                    <div class="form-profile__section-item">
+                                        <h6 class="form-profile__title">Дом</h6>
+                                        <div class="form-profile__input-wrap">
+                                            <input type="text" class="form-profile__input input" value="12/1">
+                                            <img src="img/profile-close.svg" alt="Закрытие">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="contacts-mydata">
+                                <div class="contacts-mydata__left">
+                                    <h4 class="contacts-mydata__title mydata-title">Номер телефона</h4>
+                                    <p class="contacts-mydata__phone">+7 (999) 999-99-99</p>
+                                    <button class="contacts-mydata__btn">Изменить</button>
+                                </div>
+                                <div class="contacts-mydata__right">
+                                    <h4 class="contacts-mydata__title mydata-title">E-mail</h4>
+                                    <div class="contacts-mydata__email-block">
+                                        <p class="contacts-mydata__email">Alina1808@gmail.com</p>
+                                        <p class="contacts-mydata__no-confirm">E‑mail не подтвержден</p>
+                                        <p class="contacts-mydata__email-desc">Ваш E‑mail не подтвержден</p>
+                                    </div>
+                                    <div class="contacts-mydata__buttons">
+                                        <button class="contacts-mydata__btn">Изменить</button>
+                                        <button class="contacts-mydata__btn">Подтвердить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modal-register.html')
+    @@include('partials/modal-callback.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

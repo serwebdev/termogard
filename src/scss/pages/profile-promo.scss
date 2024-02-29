@@ -1,0 +1,75 @@
+.promo {
+  &__title {
+  }
+
+  &__inner {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background: $brown;
+    border-radius: 20px;
+    padding: 40px;
+
+    @media (max-width: 768px) {
+      padding: 30px;
+    }
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $white;
+    margin-bottom: 10px;
+  }
+
+  &__discount {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $white;
+    margin-bottom: 40px;
+    max-width: 243px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
+  }
+
+  &__bottom-online {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $white;
+
+    display: flex;
+    gap: 5px;
+
+    img {
+      margin-top: 8px;
+    }
+  }
+
+  &__bottom-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    color: $white;
+  }
+}
+.profile-title {
+}

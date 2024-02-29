@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html',{title:'Каталог'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <!-- breadcrumbs---------------------------------------------------- -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__inner">
+                <div class="breadcrumbs__list">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Главная</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <div class="breadcrumbs__item">Каталог</div>
+                </div>
+                <h1 class="breadcrumbs__title">Каталог</h1>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <!-- filter---------------------------------------------------------- -->
+            <aside class="aside-catalog">
+                <form class="form-filter">
+                    <div class="accordion accordion-1">
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <h3 class="accordion__header-title h3">Категории</h3>
+                                <div class="accordion__header-icon">
+                                    <img src="img/accordion-arrow.svg" alt="Стрелка">
+                                </div>
+                            </div>
+                            <div class="accordion__body">
+                                <div class="accordion__body-content">
+                                    <!-- <div class="form-filter__categories">
+                                        <p class="form-filter__category">Огнезащитные ткани</p>
+                                        <div class="form-filter__category form-filter__category-box">
+                                            <p class="form-filter__category">Термо-огнестойкий флис и трикотаж</p>
+                                            <p class="form-filter__subcategory active">— Термо-огнестойкий флис</p>
+                                            <p class="form-filter__subcategory">— Термо-огнестойкий трикотаж</p>
+                                        </div>
+                                        <p class="form-filter__category">Термостойкое нательное белье и трикотажные
+                                            изделия</p>
+                                        <p class="form-filter__category">Термостойкое нательное белье и трикотажные
+                                            изделия</p>
+                                        <p class="form-filter__category">Трикотажные изделия в стиле милитари для охоты,
+                                            рыбалки, туризма</p>
+                                    </div> -->
+
+                                    <div class="form-filter__categories">
+                                        <label class="form-filter__category">
+                                            <input type="radio" name="category" class="form-filter__category-radio">
+                                            <span>Огнезащитные ткани</span>
+                                        </label>
+                                        <div class="form-filter__category form-filter__category-box">
+                                            <label class="form-filter__category">
+                                                <input type="radio" name="category" class="form-filter__category-radio">
+                                                <span>Термо-огнестойкий флис и трикотаж</span>
+                                            </label>
+                                            <label class="form-filter__category form-filter__subcategory">
+                                                <input type="radio" checked name="category"
+                                                    class="form-filter__category-radio">
+                                                <span>— Термо-огнестойкий флис</span>
+                                            </label>
+                                            <label class="form-filter__category form-filter__subcategory">
+                                                <input type="radio" name="category" class="form-filter__category-radio">
+                                                <span>— Термо-огнестойкий трикотаж</span>
+                                            </label>
+                                        </div>
+                                        <label class="form-filter__category">
+                                            <input type="radio" name="category" class="form-filter__category-radio">
+                                            <span>Термостойкое нательное белье и трикотажные
+                                                изделия</span>
+                                        </label>
+                                        <label class="form-filter__category">
+                                            <input type="radio" name="category" class="form-filter__category-radio">
+                                            <span>Термостойкое нательное белье и трикотажные
+                                                изделия</span>
+                                        </label>
+                                        <label class="form-filter__category">
+                                            <input type="radio" name="category" class="form-filter__category-radio">
+                                            <span>Трикотажные изделия в стиле милитари для охоты,
+                                                рыбалки, туризма</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <h3 class="accordion__header-title h3">Цена</h3>
+                                <div class="accordion__header-icon">
+                                    <img src="img/accordion-arrow.svg" alt="Стрелка">
+                                </div>
+                            </div>
+                            <div class="accordion__body">
+                                <div class="accordion__body-content">
+                                    <div class="form-filter__price">
+                                        <div class="form-filter__slider">
+                                            <div id="filter-slider" class="filter-slider"></div>
+                                        </div>
+                                        <div class="form-filter__price-box">
+                                            <label class="form-filter__price-label">
+                                                от
+                                                <input type="text" class="form-filter__price-input input">
+                                            </label>
+                                            <label class="form-filter__price-label">
+                                                до
+                                                <input type="text" class="form-filter__price-input input">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <h3 class="accordion__header-title h3">Размер</h3>
+                                <div class="accordion__header-icon">
+                                    <img src="img/accordion-arrow.svg" alt="Стрелка">
+                                </div>
+                            </div>
+                            <div class="accordion__body">
+                                <div class="accordion__body-content">
+                                    <div class="form-filter__size">
+                                        <label class="form-filter__size-label">
+                                            <input type="radio" name="size" class="form-filter__size-checkbox radio">
+                                            s
+                                        </label>
+                                        <label class="form-filter__size-label">
+                                            <input type="radio" name="size" class="form-filter__size-checkbox radio">
+                                            m
+                                        </label>
+                                        <label class="form-filter__size-label">
+                                            <input type="radio" name="size" class="form-filter__size-checkbox radio">
+                                            l
+                                        </label>
+                                        <label class="form-filter__size-label">
+                                            <input type="radio" name="size" class="form-filter__size-checkbox radio">
+                                            xl
+                                        </label>
+                                        <label class="form-filter__size-label">
+                                            <input type="radio" name="size" class="form-filter__size-checkbox radio">
+                                            xxl
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="accordion__item">
+                            <div class="accordion__header">
+                                <h3 class="accordion__header-title h3">Цвет</h3>
+                                <div class="accordion__header-icon">
+                                    <img src="img/accordion-arrow.svg" alt="Стрелка">
+                                </div>
+                            </div>
+                            <div class="accordion__body">
+                                <div class="accordion__body-content">
+                                    <div class="form-filter__color">
+                                        <label class="form-filter__color-label">
+                                            <input type="radio" name="color" class="form-filter__color-checkbox radio">
+                                            белый
+                                        </label>
+                                        <label class="form-filter__color-label">
+                                            <input type="radio" name="color" class="form-filter__color-checkbox radio">
+                                            черный
+                                        </label>
+                                        <label class="form-filter__color-label">
+                                            <input type="radio" name="color" class="form-filter__color-checkbox radio">
+                                            синий
+                                        </label>
+                                        <label class="form-filter__color-label">
+                                            <input type="radio" name="color" class="form-filter__color-checkbox radio">
+                                            зеленый
+                                        </label>
+                                        <label class="form-filter__color-label">
+                                            <input type="radio" name="color" class="form-filter__color-checkbox radio">
+                                            серый
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="form-filter__discount">
+                        <label class="form-filter__discount-label">
+                            Со скидкой
+                            <input type="checkbox" class="form-filter__discount-checkbox">
+                        </label>
+                    </div>
+                </form>
+            </aside>
+
+
+            <main class="main main-catalog">
+                @@include('partials/dropdown.html')
+                <div class="catalog-list">
+                    @@include('partials/card.html',{isDiscount:true})
+                    @@include('partials/card.html',{isDiscount:true})
+                    @@include('partials/card.html',{isDiscount:true})
+                    @@include('partials/card.html',{isTop:true})
+                    @@include('partials/card.html',{isTop:true})
+                    @@include('partials/card.html',{isTop:true})
+                    @@include('partials/card.html')
+                    @@include('partials/card.html')
+                    @@include('partials/card.html')
+                    @@include('partials/card.html')
+                    @@include('partials/card.html')
+                    @@include('partials/card.html')
+                </div>
+                <button class="catalog-btn btn-border">Загрузить еще</button>
+            </main>
+        </div>
+
+        @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modal-register.html')
+    @@include('partials/modal-callback.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

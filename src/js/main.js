@@ -1,0 +1,9 @@
+import './scripts/swiper.js';
+import './components/header.js';
+import './scripts/transfer-element.js';
+import './components/tabs-slider.js';
+import './scripts/product-filter.js';
+import './scripts/dropdown.js';
+import './scripts/profile.js';
+import './scripts/modal.js';
+import './scripts/product-details.js';

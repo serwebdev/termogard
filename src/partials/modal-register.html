@@ -1,0 +1,60 @@
+<div class="modal modal-register">
+    <div class="modal__body">
+        <button class="modal__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M1 1L11 11M11 1L1 11" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="modal__content">
+            <div class="register-content">
+                <div class="register-content__inner">
+                    <div class="register-content__top">
+                        <button class="register-content__btn active">Регистрация</button>
+                        <button class="register-content__btn">Вход</button>
+                    </div>
+                    <form class="register-form signup active">
+                        <label class="register-form__label">
+                            <p>Имя<span>*</span></p>
+                            <input type="text" class="register-form__input input">
+                        </label>
+                        <div class="register-form__group">
+                            <label class="register-form__label">
+                                <p>Номер телефона<span>*</span></p>
+                                <input type="text" class="register-form__input input">
+                            </label>
+                            <label class="register-form__label">
+                                <p>E-mail<span>*</span></p>
+                                <input type="email" class="register-form__input input">
+                            </label>
+                        </div>
+                        <label class="register-form__label-checkbox">
+                            <input type="checkbox" class="register-form__checkbox radio">
+                            Я принимаю правила обработки персональных данных и политику конфиденциальности
+                        </label>
+                        <div class="register-form__bottom">
+                            <p class="register-form__bottom-text">Уже зарегистрированы?</p>
+                            <button type="button" class="register-form__btn-open-login btn-border">Войти</button>
+                            <button class="register-form__btn-send btn">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    <form class="register-form signin">
+                        <label class="register-form__label">
+                            <p>E-mail<span>*</span></p>
+                            <input type="text" class="register-form__input input">
+                        </label>
+                        <label class="register-form__label">
+                            <p>Пароль<span>*</span></p>
+                            <input type="password" class="register-form__input input">
+                        </label>
+                        <div class="register-form__bottom">
+                            <p class="register-form__bottom-text">Еще не зарегистрированы?</p>
+                            <button type="button"
+                                class="register-form__btn-open-register btn-border">Зарегистрироваться</button>
+                            <button class="register-form__btn-send btn">Войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

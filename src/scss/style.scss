@@ -1,0 +1,41 @@
+// Внешние файлы ======================================================
+@import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/nouislider/dist/nouislider.min';
+
+// Из папки vendor =====================================================
+
+// Базовые стили =======================================================
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/global';
+
+// Компоненты ===========================================================
+@import 'components/header';
+@import 'components/footer';
+@import 'components/card';
+@import 'components/contacts__inner';
+@import 'components/card-article';
+@import 'components/reviews-item';
+@import 'components/dropdown';
+@import 'components/modal-register';
+@import 'components/modal-callback';
+
+// Страницы ================================================================
+@import 'pages/index';
+@import 'pages/brand';
+@import 'pages/articles';
+@import 'pages/article';
+@import 'pages/product';
+@import 'pages/reviews';
+@import 'pages/payment';
+@import 'pages/catalog';
+@import 'pages/profile';
+@import 'pages/profile-promo';
+@import 'pages/profile-order-1';
+@import 'pages/profile-order-2';
+@import 'pages/profile-order-3';
+@import 'pages/policy';
+@import 'pages/agreement';
+@import 'pages/404';

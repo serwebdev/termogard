@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html',{title:'Личный кабинет - Промокоды'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <!-- breadcrumbs---------------------------------------------------- -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__inner">
+                <div class="breadcrumbs__list">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Главная</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Личный кабинет</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <div class="breadcrumbs__item">Промокоды</div>
+                </div>
+                <h1 class="breadcrumbs__title">Промокоды</h1>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="profile-mydata">
+                <div class="container">
+                    <div class="profile-mydata__inner">
+                        <nav class="menu-profile">
+                            <ul class="menu-profile__list">
+                                <li class="menu-profile__item active">
+                                    <a href="profile.html" class="menu-profile__link">Мои данные</a>
+                                </li>
+                                <li class="menu-profile__item">
+                                    <a href="profile-order-1.html" class="menu-profile__link">Мои заказы</a>
+                                </li>
+                                <li class="menu-profile__item">
+                                    <a href="profile-promo.html" class="menu-profile__link">Мои промокоды</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="promo">
+                            <h2 class="promo__title profile-title h3">Мои промокоды</h2>
+                            <div class="promo__inner">
+                                <div class="promo__item">
+                                    <p class="promo__date">По 25 сент. 2024</p>
+                                    <p class="promo__discount">Скидка 10% на первый
+                                        онлайн заказ</p>
+                                    <div class="promo__bottom">
+                                        <div class="promo__bottom-online">
+                                            <span>ONLINE10</span>
+                                            <img src="img/promo-icon.svg" alt="Promo">
+                                        </div>
+                                        <a href="#" class="promo__bottom-link">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="promo__item">
+                                    <p class="promo__date">По 25 сент. 2024</p>
+                                    <p class="promo__discount">Скидка 10% на первый
+                                        онлайн заказ</p>
+                                    <div class="promo__bottom">
+                                        <div class="promo__bottom-online">
+                                            <span>ONLINE10</span>
+                                            <img src="img/promo-icon.svg" alt="Promo">
+                                        </div>
+                                        <a href="#" class="promo__bottom-link">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modal-register.html')
+    @@include('partials/modal-callback.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

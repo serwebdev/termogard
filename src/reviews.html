@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html',{title:'Отзывы'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            <!-- breadcrumbs---------------------------------------------------- -->
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__inner">
+                    <div class="breadcrumbs__list">
+                        <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Главная</a>
+                        <img src="img/breadcrumbs.svg" alt="separator">
+                        <div class="breadcrumbs__item">Отзывы</div>
+                    </div>
+                    <h1 class="breadcrumbs__title">Отзывы</h1>
+                </div>
+            </div>
+
+            <!-- reviews-form----------------------------------------------------- -->
+            <section class="reviews-form">
+                <div class="container">
+                    <h3 class="reviews-form__title h3">Напишите свой отзыв</h3>
+                    <form class="form-reviews">
+                        <input type="text" class="form-reviews__input input" placeholder="Ваше имя">
+                        <textarea name="" class="form-reviews__textarea input" placeholder="Ваш отзыв"></textarea>
+                        <label class="form-reviews__label-file">
+                            <input type="file" name="" class="form-reviews__input-file">
+                            <div class="form-reviews__plus">
+                                <img src="img/plus.svg" alt="Плюс">
+                            </div>
+                            <p class="form-reviews__text">Добавить файл</p>
+                        </label>
+                        <label class="form-reviews__label-agree">
+                            <input type="checkbox" name="" class="form-reviews__radio radio">
+                            <p class="form-reviews__radio-text">Отправляя свои данные, вы соглашаетесь с политикой
+                                конфиденциальности данных</p>
+                        </label>
+                        <button class="form-reviews__btn btn">Отправить</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- reviews-------------------------------------------------------- -->
+            <section class="reviews sec-top">
+                <div class="container">
+                    <div class="reviews__inner">
+                        @@include('partials/reviews-item.html')
+                        @@include('partials/reviews-item.html')
+                        @@include('partials/reviews-item.html')
+                        @@include('partials/reviews-item.html')
+                        <button class="reviews__btn btn-border">Загрузить еще</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modal-register.html')
+    @@include('partials/modal-callback.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

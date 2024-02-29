@@ -1,0 +1,237 @@
+.breadcrumbs {
+  max-width: 1650px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    background: #f7f7f7;
+    padding: 40px;
+    border-radius: 20px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+      border-radius: 15px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    color: $black;
+
+    &.no-margin {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+  }
+
+  &__item--link {
+    color: #bcbcbc;
+    transition: 0.3s;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__title-block {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.2;
+    color: $black;
+
+    @media (max-width: 768px) {
+      font-size: 34px;
+    }
+    @media (max-width: 500px) {
+      font-size: 28px;
+    }
+  }
+
+  &__title-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #a2a2a2;
+    margin-bottom: 7px;
+  }
+}
+
+// brand========================================================
+.brand__title {
+}
+
+// why-we========================================================================
+.why-we {
+  margin-top: 80px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+
+  &__title {
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+  }
+
+  &__img-wrap {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: $brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    @media (max-width: 1200px) {
+      max-width: 50%;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: $black45;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+
+// what================================================================
+.what {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: $black45;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    @media (max-width: 1300px) {
+      gap: 20px;
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 400px) {
+      gap: 15px;
+    }
+  }
+
+  &__item {
+    background: $brown;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 238px;
+
+    @media (max-width: 1300px) {
+      padding: 15px;
+      gap: 10px;
+      min-height: 200px;
+    }
+
+    @media (max-width: 900px) {
+      min-height: auto;
+    }
+    @media (max-width: 400px) {
+      padding: 10px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: $white;
+
+    @media (max-width: 1300px) {
+      font-size: 40px;
+    }
+    @media (max-width: 400px) {
+      font-size: 30px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: $white;
+    margin-top: auto;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}

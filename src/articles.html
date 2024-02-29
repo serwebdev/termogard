@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html',{title:'Статьи'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            <!-- breadcrumbs---------------------------------------------------- -->
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__inner">
+                    <div class="breadcrumbs__list">
+                        <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Главная</a>
+                        <img src="img/breadcrumbs.svg" alt="separator">
+                        <div class="breadcrumbs__item">Статьи</div>
+                    </div>
+                    <h1 class="breadcrumbs__title">Статьи</h1>
+                </div>
+            </div>
+
+            <!-- articles--------------------------------------------- -->
+            <section class="articles">
+                <div class="container">
+
+                    <div class="articles__list">
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                        @@include('partials/card-article.html')
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modal-register.html')
+    @@include('partials/modal-callback.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

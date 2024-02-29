@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card__img-wrap">
+        @@if(context.isTop){
+        <div class="card__label-top">ТОП</div>
+        }
+        <img src="../img/card-img.png" alt="Товар" class="card__img">
+    </div>
+    <p class="card__text"><span class="@@if(context.isSearch){brown}">Термо</span>белье HEROBIKER мужское, рубашка,
+        нижнее белье, костюм,
+        мотоциклетная
+        футболка, одежда
+        для зимы</p>
+    <div class="card__bottom @@if(context.isDiscount){discount}">
+        <div class="card__bottom-left">
+            @@if(context.isDiscount){
+            <div class="card__discount">
+                <div class="card__percent">-20%</div>
+                <div class="card__old-price">2 120 ₽</div>
+            </div>
+            }
+
+            <div class="card__price">1 696 ₽</div>
+        </div>
+        <div class="card__bottom-right">
+            <button class="card__add-to-cart-btn btn">
+                <img src="../img/basket-icon.svg" alt="Добавить в корзину" class="card__basket-icon">
+            </button>
+        </div>
+    </div>
+    <a href="product.html" class="card__link"></a>
+</div>

@@ -1,0 +1,240 @@
+/* modal===================== */
+.modal {
+  --transition: 0.3s;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 30px 15px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: visibility var(--transition), opacity var(--transition);
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.modal__body {
+  max-width: 1140px;
+  width: 100%;
+  //   background-color: #fff;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 4px;
+  margin: auto;
+  transition: var(--transition);
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.modal__body.open {
+  transform: scale(1);
+  pointer-events: all;
+}
+
+.modal__btn {
+  // font-size: 24px;
+  // color: rgba(0, 0, 0, 0.678);
+  // line-height: 1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  right: 30px;
+
+  @media (max-width: 768px) {
+    top: 24px;
+    right: 24px;
+  }
+
+  &:hover {
+    svg {
+      stroke: $black45;
+    }
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    stroke: #9a9a9a;
+    transition: 0.3s;
+  }
+}
+
+// .modal__btn:hover {
+//   color: #000;
+// }
+
+.modal__content {
+  //   padding: 30px;
+}
+
+// register-content=======================================================
+.register-content {
+  // max-width: 1140px;
+  padding: 80px 15px;
+  border-radius: 40px;
+  background: $white;
+
+  @media (max-width: 768px) {
+    padding-bottom: 40px;
+    border-radius: 20px;
+  }
+
+  &__inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgba($black45, 0.2);
+    display: flex;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
+  }
+
+  &__btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: rgba($black45, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: -3px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    &.active {
+      color: $brown;
+      border-bottom: 4px solid $brown;
+    }
+  }
+
+  //   &__btn-login {
+  //   }
+}
+
+// register-form========================================================
+.register-form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+
+  &.active {
+    display: flex;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #939393;
+
+    span {
+      color: $black;
+    }
+  }
+
+  &__input {
+  }
+
+  &__group {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__label-checkbox {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #3d3d3d;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    &:hover {
+      .register-form__checkbox {
+        border-color: $brown-hover;
+      }
+    }
+  }
+
+  &__checkbox {
+  }
+
+  &__bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__bottom-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #454545;
+  }
+
+  &__btn-open-login,
+  &__btn-open-register {
+    padding: 18px 44px;
+
+    @media (max-width: 768px) {
+      padding: 13px 40px;
+    }
+  }
+
+  &__btn-send {
+    margin-left: auto;
+    padding: 19px 44px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      font-size: 16px;
+      padding: 14px 40px;
+    }
+  }
+}
+.signup {
+}

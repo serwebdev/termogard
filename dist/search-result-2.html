@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="overlay-for-menu"></div>
+<header class="header">
+    <div class="header__top-wrap">
+        <div class="header__top header-top">
+            <button class="header-top__btn header-top__btn--phone">Заказать звонок</button>
+            <a href="tel:89999999999" class="header-top__phone">8 (999) 999-99-99</a>
+            <a href="mailto:info@mail.com" class="header-top__btn header-top__btn--email">Написать</a>
+            <a href="mailto:info@mail.com" class="header-top__email">info@mail.com</a>
+            <button class="header-top__btn-login">
+                <img src="img/login.svg" alt="Логин">
+            </button>
+            <button class="header-top__btn-cart">
+                <img src="img/cart-icon.svg" alt="Иконка корзины">
+                <span>0</span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__bottom-mobile"></div>
+
+        <div class="header-bottom">
+            <div class="menu-left">
+                <nav class="menu-left__nav">
+                    <ul class="menu-left__list">
+                        <li class="menu-left__item">
+                            <a href="articles.html" class="menu-left__link">Статьи</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">Популярные товары</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">Новинки</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">Акции</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">Скидки</a>
+                        </li>
+                        <li class="menu-left__item">
+                            <a href="#" class="menu-left__link">Промокоды</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="menu-left__btn">
+                    <img src="img/menu-left-btn-open.svg" alt="Открыто" class="img-open">
+                    <img src="img/menu-left-btn-close.svg" alt="Закрыто" class="img-close">
+                </button>
+            </div>
+            <a href="index.html" class="header-bottom__logo">
+                <img src="img/logo.svg" alt="Логотип">
+            </a>
+
+            <div class="search-form-wrap">
+                <form class="search-form">
+                    <div class="search-form__input-wrap">
+                        <input type="text" class="search-form__input" placeholder="Поиск по каталогу товаров">
+                        <img src="img/search.svg" alt="Поиск" class="search-form__search-icon">
+                    </div>
+                </form>
+                <div class="search-form__btn-wrap">
+                    <button class="search-form__btn">
+                        <div class="search-form__btn-inner">
+                            <img src="img/menu-catalog-btn-open.svg" alt="Кнопка поиска" class="img-open">
+                            <img src="img/menu-left-btn-close.svg" alt="Кнопка поиска" class="img-close">
+                            <span>Каталог</span>
+                        </div>
+                    </button>
+                    <div class="menu-catalog">
+                        <div class="menu-catalog__inner">
+                            <div class="menu-catalog__left">
+                                <div class="menu-catalog__row">
+                                    <div class="menu-catalog__item menu-catalog__item--1">
+                                        <p class="menu-catalog__text">Термостойкое нательное белье и трикотажные
+                                            изделия</p>
+                                        <div class="menu-catalog__item-inner">
+                                            <div class="menu-catalog__label">325 шт</div>
+                                            <img src="img/menu-catalog-1.webp" alt="Меню каталог"
+                                                class="menu-catalog__img">
+                                        </div>
+                                        <a href="catalog.html" class="menu-catalog__link"></a>
+                                    </div>
+                                    <div class="menu-catalog__item menu-catalog__item--2">
+                                        <p class="menu-catalog__text">Термостойкое нательное белье и трикотажные
+                                            изделия</p>
+                                        <div class="menu-catalog__item-inner">
+                                            <div class="menu-catalog__label">5 шт</div>
+                                            <img src="img/menu-catalog-2.webp" alt="Меню каталог"
+                                                class="menu-catalog__img">
+                                        </div>
+                                        <a href="catalog.html" class="menu-catalog__link"></a>
+                                    </div>
+                                </div>
+                                <div class="menu-catalog__row">
+                                    <div class="menu-catalog__item menu-catalog__item--3">
+                                        <p class="menu-catalog__text">Трикотажные изделия в стиле милитари для
+                                            охоты, рыбалки, туризма</p>
+                                        <div class="menu-catalog__item-inner">
+                                            <div class="menu-catalog__label">10 шт</div>
+                                            <img src="img/menu-catalog-3.webp" alt="Меню каталог"
+                                                class="menu-catalog__img">
+                                        </div>
+                                        <a href="catalog.html" class="menu-catalog__link"></a>
+                                    </div>
+                                    <div class="menu-catalog__item menu-catalog__item--4">
+                                        <p class="menu-catalog__text">Огнезащитные ткани</p>
+                                        <div class="menu-catalog__item-inner">
+                                            <div class="menu-catalog__label">32 шт</div>
+                                            <img src="img/menu-catalog-4.webp" alt="Меню каталог"
+                                                class="menu-catalog__img">
+                                        </div>
+                                        <a href="catalog.html" class="menu-catalog__link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-catalog__right">
+                                <div class="menu-catalog__item menu-catalog__item--5">
+                                    <p class="menu-catalog__text">Термо-огнестойкий флис и трикотаж</p>
+                                    <div class="menu-catalog__item-inner">
+                                        <div class="menu-catalog__label">75 шт</div>
+                                        <img src="img/menu-catalog-5.webp" alt="Меню каталог"
+                                            class="menu-catalog__img">
+                                    </div>
+                                    <a href="catalog.html" class="menu-catalog__link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="menu-right">
+                <ul class="menu-right__list">
+                    <li class="menu-right__item">
+                        <a href="brand.html" class="menu-right__link">О бренде</a>
+                    </li>
+                    <li class="menu-right__item">
+                        <a href="payment.html" class="menu-right__link">Оплата и доставка</a>
+                    </li>
+                    <li class="menu-right__item">
+                        <a href="reviews.html" class="menu-right__link">Отзывы</a>
+                    </li>
+                    <li class="menu-right__item">
+                        <a href="contacts.html" class="menu-right__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <div class="header__bottom-mobile"></div> -->
+    </div>
+</header>
+
+        <!-- breadcrumbs---------------------------------------------------- -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__inner">
+                <div class="breadcrumbs__list">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Главная</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Каталог</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <div class="breadcrumbs__item">Результат поиска “Термо”</div>
+                </div>
+                <div class="breadcrumbs__title-block">
+                    <h1 class="breadcrumbs__title">Результат поиска: Термо</h1>
+                    <p class="breadcrumbs__title-desc">2 товара найдено</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+
+
+
+            <main class="main main-catalog">
+                <form class="form-dropdown-sort">
+    <!-- Чтобы отключить добавить класс disabled -->
+    <div class="dropdown">
+        <div class="dropdown__back"></div>
+        <div class="dropdown__btn">По популярности</div>
+        <div class="dropdown__menu">
+            <ul class="dropdown__list">
+                <li class="dropdown__item active">
+                    <label class="form-dropdown-sort__label">
+                        <input type="radio" name="sort" class="form-dropdown-sort__radio radio" checked>
+                        <span>По популярности</span>
+                    </label>
+                </li>
+                <li class="dropdown__item">
+                    <label class="form-dropdown-sort__label">
+                        <input type="radio" name="sort" class="form-dropdown-sort__radio radio">
+                        <span>По рейтингу</span>
+                    </label>
+                </li>
+                <li class="dropdown__item">
+                    <label class="form-dropdown-sort__label">
+                        <input type="radio" name="sort" class="form-dropdown-sort__radio radio">
+                        <span>По новизне</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>
+                <div class="catalog-list serch-result-list">
+                    <div class="card">
+    <div class="card__img-wrap">
+        
+        <img src="img/card-img.webp" alt="Товар" class="card__img">
+    </div>
+    <p class="card__text"><span class="brown">Термо</span>белье HEROBIKER мужское, рубашка,
+        нижнее белье, костюм,
+        мотоциклетная
+        футболка, одежда
+        для зимы</p>
+    <div class="card__bottom ">
+        <div class="card__bottom-left">
+            
+
+            <div class="card__price">1 696 ₽</div>
+        </div>
+        <div class="card__bottom-right">
+            <button class="card__add-to-cart-btn btn">
+                <img src="img/basket-icon.svg" alt="Добавить в корзину" class="card__basket-icon">
+            </button>
+        </div>
+    </div>
+    <a href="product.html" class="card__link"></a>
+</div>
+                    <div class="card">
+    <div class="card__img-wrap">
+        
+        <img src="img/card-img.webp" alt="Товар" class="card__img">
+    </div>
+    <p class="card__text"><span class="brown">Термо</span>белье HEROBIKER мужское, рубашка,
+        нижнее белье, костюм,
+        мотоциклетная
+        футболка, одежда
+        для зимы</p>
+    <div class="card__bottom ">
+        <div class="card__bottom-left">
+            
+
+            <div class="card__price">1 696 ₽</div>
+        </div>
+        <div class="card__bottom-right">
+            <button class="card__add-to-cart-btn btn">
+                <img src="img/basket-icon.svg" alt="Добавить в корзину" class="card__basket-icon">
+            </button>
+        </div>
+    </div>
+    <a href="product.html" class="card__link"></a>
+</div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__top-inner">
+                <a href="#" class="footer__logo">
+                    <img src="img/footer-logo.svg" alt="Логотип">
+                </a>
+                <nav class="menu-footer">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link">Главная</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link">Контакты</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link">Оплата и доставка</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link">О бренде</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link">Статьи</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts">
+                    <a href="tel:89999999999" class="footer__contacts-item">
+                        <img src="img/footer-phone.svg" alt="Телефон">
+                        <span>8 (999) 999-99-99</span>
+                    </a>
+                    <a href="mailto:info@mail.com" class="footer__contacts-item">
+                        <img src="img/footer-email.svg" alt="Email">
+                        <span>info@mail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom-inner">
+                <a href="#" class="footer__bottom-text">© Все права защищены</a>
+                <a href="#" class="footer__bottom-text">Политика обработки персональных данных</a>
+                <a href="#" class="footer__bottom-text">Согласие на обработку персональных данных</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <div class="modal modal-register">
+    <div class="modal__body">
+        <button class="modal__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M1 1L11 11M11 1L1 11" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="modal__content">
+            <div class="register-content">
+                <div class="register-content__inner">
+                    <div class="register-content__top">
+                        <button class="register-content__btn active">Регистрация</button>
+                        <button class="register-content__btn">Вход</button>
+                    </div>
+                    <form class="register-form signup active">
+                        <label class="register-form__label">
+                            <p>Имя<span>*</span></p>
+                            <input type="text" class="register-form__input input">
+                        </label>
+                        <div class="register-form__group">
+                            <label class="register-form__label">
+                                <p>Номер телефона<span>*</span></p>
+                                <input type="text" class="register-form__input input">
+                            </label>
+                            <label class="register-form__label">
+                                <p>E-mail<span>*</span></p>
+                                <input type="email" class="register-form__input input">
+                            </label>
+                        </div>
+                        <label class="register-form__label-checkbox">
+                            <input type="checkbox" class="register-form__checkbox radio">
+                            Я принимаю правила обработки персональных данных и политику конфиденциальности
+                        </label>
+                        <div class="register-form__bottom">
+                            <p class="register-form__bottom-text">Уже зарегистрированы?</p>
+                            <button type="button" class="register-form__btn-open-login btn-border">Войти</button>
+                            <button class="register-form__btn-send btn">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    <form class="register-form signin">
+                        <label class="register-form__label">
+                            <p>E-mail<span>*</span></p>
+                            <input type="text" class="register-form__input input">
+                        </label>
+                        <label class="register-form__label">
+                            <p>Пароль<span>*</span></p>
+                            <input type="password" class="register-form__input input">
+                        </label>
+                        <div class="register-form__bottom">
+                            <p class="register-form__bottom-text">Еще не зарегистрированы?</p>
+                            <button type="button"
+                                class="register-form__btn-open-register btn-border">Зарегистрироваться</button>
+                            <button class="register-form__btn-send btn">Войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal modal-callback">
+    <div class="modal__body">
+        <button class="modal__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M1 1L11 11M11 1L1 11" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="modal__content callback-content">
+            <form class="callback-form signup active">
+                <h3 class="callback-form__title h3">Заказать обратный звонок</h3>
+                <input type="text" class="callback-form__input input" placeholder="Имя">
+                <input type="tel" class="callback-form__input input">
+                <button class="callback-form__btn-send btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

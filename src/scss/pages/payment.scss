@@ -1,0 +1,85 @@
+.payment-sec1 {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__list {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__list-item {
+  }
+}
+
+.payment-sec2 {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__list-block {
+  }
+
+  &__list-title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: disc;
+  }
+
+  &__list-item {
+  }
+}
+
+.payment-sec {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+  }
+}
+.payment-sec3 {
+}
+.payment-sec4 {
+}
+.payment-sec5 {
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+}

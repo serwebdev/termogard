@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html',{title:'Главная'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-slider-wrap">
+                        <div class="hero-slider swiper">
+                            <div class="hero-slider__wrapper swiper-wrapper">
+                                <div class="hero-slider__slide swiper-slide">
+                                    <div class="hero-slider__content">
+                                        <img src="img/hero.jpg" alt="Защитные ткани" class="hero-slider__img" />
+                                        <div class="hero-slider__info">
+                                            <h1 class="hero-slider__title">
+                                                ЗАЩИТНЫЕ ТКАНИ ДЛЯ СПЕЦОДЕЖДЫ
+                                            </h1>
+                                            <p class="hero-slider__text">
+                                                от компании WESTEX<br />и других производителей
+                                            </p>
+                                            <a href="#" class="hero-slider__link btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hero-slider__slide swiper-slide">
+                                    <div class="hero-slider__content">
+                                        <img src="img/hero.jpg" alt="Защитные ткани" class="hero-slider__img" />
+                                        <div class="hero-slider__info">
+                                            <h1 class="hero-slider__title">
+                                                ЗАЩИТНЫЕ ТКАНИ ДЛЯ СПЕЦОДЕЖДЫ
+                                            </h1>
+                                            <p class="hero-slider__text">
+                                                от компании WESTEX<br />и других производителей
+                                            </p>
+                                            <a href="#" class="hero-slider__link hover-btn btn">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 32.5C0 50.4493 14.5507 65 32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5Z"
+                                    fill="#E37600" class="bg" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M38.5269 21.4584C37.896 20.8472 36.8732 20.8472 36.2424 21.4584L25.4731 31.8932C24.8423 32.5045 24.8423 33.4955 25.4731 34.1068L36.2424 44.5416C36.8732 45.1528 37.896 45.1528 38.5269 44.5416C39.1577 43.9303 39.1577 42.9393 38.5269 42.328L28.8999 33L38.5269 23.672C39.1577 23.0607 39.1577 22.0697 38.5269 21.4584Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M65 32.5C65 50.4493 50.4493 65 32.5 65C14.5507 65 0 50.4493 0 32.5C0 14.5507 14.5507 0 32.5 0C50.4493 0 65 14.5507 65 32.5Z"
+                                    fill="#E37600" class="bg" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M26.4731 21.4584C27.104 20.8472 28.1268 20.8472 28.7576 21.4584L39.5269 31.8932C40.1577 32.5045 40.1577 33.4955 39.5269 34.1068L28.7576 44.5416C28.1268 45.1528 27.104 45.1528 26.4731 44.5416C25.8423 43.9303 25.8423 42.9393 26.4731 42.328L36.1001 33L26.4731 23.672C25.8423 23.0607 25.8423 22.0697 26.4731 21.4584Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- tabs-slider-------------------------------------------------------- -->
+            <section class="tabs-slider">
+                <div class="container">
+                    <div class="tabs-slider__inner">
+                        <div class="tabs-slider__top">
+                            <div class="tabs-slider__buttons">
+                                <button class="tabs-slider__button active">Новинки</button>
+                                <button class="tabs-slider__button">Популярные товары</button>
+                                <button class="tabs-slider__button">Скидки</button>
+                                <button class="tabs-slider__button">Акции</button>
+                            </div>
+                            <div class="tabs-slider__navigation">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="tabs-slider__bottom">
+                            <div class="tabs-slider__content active">
+                                <div class="slider-tabs swiper">
+                                    <div class="slider-tabs__wrapper swiper-wrapper">
+                                        @@for(let i = 0; i < 5; i++) { <div class="slider-tabs__slide swiper-slide">
+                                            @@include('partials/card.html',{isTop:true})
+                                    </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-slider__content">
+                            <div class="slider-tabs swiper">
+                                <div class="slider-tabs__wrapper swiper-wrapper">
+                                    @@for(let i = 0; i < 5; i++) { <div class="slider-tabs__slide swiper-slide">
+                                        @@include('partials/card.html',{isTop:true})
+                                </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-slider__content">
+                        <div class="slider-tabs swiper">
+                            <div class="slider-tabs__wrapper swiper-wrapper">
+                                @@for(let i = 0; i < 5; i++) { <div class="slider-tabs__slide swiper-slide">
+                                    @@include('partials/card.html',{isTop:true})
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-slider__content">
+                    <div class="slider-tabs swiper">
+                        <div class="slider-tabs__wrapper swiper-wrapper">
+                            @@for(let i = 0; i < 5; i++) { <div class="slider-tabs__slide swiper-slide">
+                                @@include('partials/card.html',{isTop:true})
+                        </div>
+                        }
+                    </div>
+                </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- brand------------------------------------------------------------- -->
+    <section class="brand">
+        <div class="container">
+            <h2 class="brand__title h2">О бренде</h2>
+            <div class="brand__inner">
+                <div class="brand__left">
+                    <p class="brand__text">
+                        Картельные сговоры не допускают ситуации, при которой базовые
+                        сценарии поведения пользователей являются только методом
+                        политического участия и преданы социально-демократической
+                        анафеме. В своём стремлении повысить качество жизни, они
+                        забывают, что новая модель организационной деятельности
+                        предполагает независимые способы реализации первоочередных
+                        требований. Лишь сторонники тоталитаризма в науке, превозмогая
+                        сложившуюся непростую экономическую ситуацию, указаны как
+                        претенденты на роль ключевых факторов.
+                    </p>
+                    <p class="brand__text">
+                        Значимость этих проблем настолько очевидна, что
+                        высококачественный прототип будущего проекта играет
+                        определяющее значение для инновационных методов управления
+                        процессами. Вот вам яркий пример современных тенденций —
+                        сплочённость команды профессионалов предполагает независимые
+                        способы реализации модели развития. Равным образом, начало
+                        повседневной работы по формированию позиции создаёт
+                        необходимость включения в производственный план целого ряда
+                        внеочередных мероприятий с учётом комплекса форм воздействия.
+                        Противоположная точка зрения...
+                        <a href="#" class="brand__link-more">Читать дальше</a>
+                    </p>
+                    <a href="brand.html" class="brand__btn btn-border">Узнать больше</a>
+                </div>
+                <div class="brand__right">
+                    <img src="img/brand.png" alt="О бренде" class="brand__img" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- articles-main--------------------------------------------- -->
+    <section class="articles-main">
+        <div class="container">
+            <h2 class="articles-main__title h2">Статьи</h2>
+            <div class="articles-main__inner">
+                <div class="articles-main__list">
+                    <div class="articles-main__item">
+                        <img src="img/articles-main.jpg" alt="Ссылка на статью" class="articles-main__img" />
+                        <a href="#" class="articles-main__info-link">
+                            <div class="articles-main__date">
+                                <img src="img/article-day.svg" alt="" class="articles-main__day" />
+                                <img src="img/article-month.svg" alt="" class="articles-main__month" />
+                            </div>
+                            <p class="articles-main__text">
+                                Принципы работы и характеристики термобелья
+                            </p>
+                        </a>
+                    </div>
+                    <div class="articles-main__item">
+                        <img src="img/articles-main.jpg" alt="Ссылка на статью" class="articles-main__img" />
+                        <a href="#" class="articles-main__info-link">
+                            <div class="articles-main__date">
+                                <img src="img/article-day.svg" alt="" class="articles-main__day" />
+                                <img src="img/article-month.svg" alt="" class="articles-main__month" />
+                            </div>
+                            <p class="articles-main__text">
+                                Принципы работы и характеристики термобелья
+                            </p>
+                        </a>
+                    </div>
+                    <div class="articles-main__item">
+                        <img src="img/articles-main.jpg" alt="Ссылка на статью" class="articles-main__img" />
+                        <a href="#" class="articles-main__info-link">
+                            <div class="articles-main__date">
+                                <img src="img/article-day.svg" alt="" class="articles-main__day" />
+                                <img src="img/article-month.svg" alt="" class="articles-main__month" />
+                            </div>
+                            <p class="articles-main__text">
+                                Принципы работы и характеристики термобелья
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <a href="articles.html" class="articles-main__btn btn-border">Все статьи</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contacts---------------------------------------------------------------------- -->
+    <section class="contacts">
+        <div class="container">
+            <h2 class="contacts__title h2">Контакты</h2>
+            @@include('partials/contacts_inner.html')
+        </div>
+    </section>
+
+
+    </main>
+
+    @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modal-register.html')
+    @@include('partials/modal-callback.html')
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

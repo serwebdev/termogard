@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('partials/head.html',{title:'Поиск'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <!-- breadcrumbs---------------------------------------------------- -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__inner">
+                <div class="breadcrumbs__list">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Главная</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <a href="/" class="breadcrumbs__item breadcrumbs__item--link">Каталог</a>
+                    <img src="img/breadcrumbs.svg" alt="separator">
+                    <div class="breadcrumbs__item">Результат поиска “Термо”</div>
+                </div>
+                <div class="breadcrumbs__title-block">
+                    <h1 class="breadcrumbs__title">Результат поиска: Термо</h1>
+                    <p class="breadcrumbs__title-desc">499 товаров найдено</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+
+
+
+            <main class="main main-catalog">
+                @@include('partials/dropdown.html')
+                <div class="catalog-list serch-result-list">
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                    @@include('partials/card.html',{isSearch:true})
+                </div>
+                <button class="catalog-btn btn-border">Загрузить еще</button>
+            </main>
+        </div>
+
+        @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modal-register.html')
+    @@include('partials/modal-callback.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

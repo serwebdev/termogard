@@ -1,0 +1,131 @@
+.reviews-form {
+  &__title {
+    font-weight: 600;
+  }
+}
+
+.form-reviews {
+  max-width: 1054px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__input {
+    padding: 22px 40px;
+
+    @media (max-width: 768px) {
+      padding: 14px 20px;
+    }
+  }
+
+  &__textarea {
+    padding: 22px 40px;
+    border-radius: 15px 15px 21px 15px;
+    height: 205px;
+
+    @media (max-width: 768px) {
+      padding: 14px 20px;
+    }
+  }
+
+  &__label-file {
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 229px;
+    cursor: pointer;
+
+    &:hover {
+      .form-reviews__plus {
+        background: $brown-hover;
+      }
+
+      .form-reviews__text {
+        color: $brown;
+      }
+    }
+  }
+
+  &__input-file {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__plus {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $brown;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $black45;
+    transition: 0.3s;
+  }
+
+  &__label-agree {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__radio {
+    min-width: 28px;
+    height: 28px;
+  }
+
+  &__radio-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $black45;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    padding: 28px 70px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $white;
+    align-self: flex-start;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 16px 70px;
+    }
+  }
+}
+
+// reviews==================================================================
+.reviews {
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__btn {
+    align-self: flex-start;
+  }
+}
