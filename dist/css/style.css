@@ -2037,6 +2037,12 @@ body {
   overflow: hidden;
 }
 
+.contacts__map div,
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .card-article {
   border-radius: 30px;
   overflow: hidden;
